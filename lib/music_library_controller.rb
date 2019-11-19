@@ -54,6 +54,8 @@ class MusicLibraryController
     puts "Please enter the name of a genre:"
     input = gets.strip
 
+    if genre = Genre.find_by_name(input)
+      genre.songs.sort
 
   end
 
